@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTech | Tecnologia e Sustentabilidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="container nav">
+      <a class="logo" href="#inicio">Eco<span>Tech</span></a>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#sobre">Sobre</a></li><li><a href="#projetos">Projetos</a></li>
+        <li><a href="#equipe">Equipe</a></li><li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio"><div class="container hero-grid">
+      <div><p class="tag">TECNOLOGIA + SUSTENTABILIDADE</p><h1>Ideias digitais para um <span>planeta melhor.</span></h1>
+        <p class="intro">Somos uma equipe que acredita que a tecnologia pode ajudar a cuidar do meio ambiente. Conheça nossas ideias e projetos.</p>
+        <a class="btn" href="#projetos">Conheça os projetos ↓</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Planeta Terra e folhas"><div class="orbit"></div><div class="orbit orbit-two"></div><div class="planet">🌎</div><div class="leaf leaf-one">🌿</div><div class="leaf leaf-two">♻️</div></div>
+    </div></section>
+    <section class="section container" id="sobre"><div class="section-heading"><p class="tag">NOSSA MISSÃO</p><h2>Sobre o projeto</h2></div>
+      <div class="about-card"><div class="about-icon">🌱</div><div><h3>Pequenas atitudes, grandes mudanças</h3><p>O EcoTech é um projeto educativo que une informática e consciência ambiental. Queremos mostrar como sites, aplicativos e informação podem incentivar a reciclagem, economizar recursos e inspirar hábitos sustentáveis.</p></div></div>
+      <div class="stats"><div><strong>3</strong><span>ideias de ação</span></div><div><strong>4</strong><span>integrantes</span></div><div><strong>1</strong><span>objetivo: cuidar do planeta</span></div></div>
+    </section>
+    <section class="section projects-section" id="projetos"><div class="container"><div class="section-heading"><p class="tag">O QUE IMAGINAMOS</p><h2>Projetos em destaque</h2><p>Ideias para a escola e a comunidade.</p></div>
+      <div class="cards">
+        <article class="project-card"><div class="project-icon green">♻️</div><p class="card-label">IDEIA 01</p><h3>Guia da Reciclagem</h3><p>Uma página interativa para ensinar como separar papel, plástico, vidro e metal corretamente.</p><button class="details-btn" data-detail="O guia pode ter busca por material, cores para cada resíduo e dicas para reduzir o lixo.">Ver ideia ↗</button></article>
+        <article class="project-card"><div class="project-icon blue">💧</div><p class="card-label">IDEIA 02</p><h3>Desafio da Água</h3><p>Uma campanha digital com dicas simples para evitar o desperdício de água.</p><button class="details-btn" data-detail="O desafio pode apresentar uma dica por dia e uma lista de hábitos sustentáveis.">Ver ideia ↗</button></article>
+        <article class="project-card"><div class="project-icon yellow">🌳</div><p class="card-label">IDEIA 03</p><h3>Escola Verde</h3><p>Um mural online para compartilhar ações ecológicas realizadas pelos estudantes.</p><button class="details-btn" data-detail="O mural pode reunir hortas, mutirões de limpeza, coleta seletiva e outras iniciativas.">Ver ideia ↗</button></article>
+      </div></div></section>
+    <section class="section container" id="equipe"><div class="section-heading"><p class="tag">QUEM SOMOS</p><h2>Nossa equipe</h2><p>Quatro pessoas, diferentes ideias e um objetivo em comum.</p></div>
+      <div class="team-grid"><article class="team-card"><div class="avatar avatar-a">E</div><h3>Ellem</h3><p>Pesquisa e organização</p></article><article class="team-card"><div class="avatar avatar-b">K</div><h3>Kellyane</h3><p>Conteúdo e criatividade</p></article><article class="team-card"><div class="avatar avatar-c">N</div><h3>Nathan</h3><p>Desenvolvimento web</p></article><article class="team-card"><div class="avatar avatar-d">K</div><h3>Kaio</h3><p>Design e apresentação</p></article></div>
+      <p class="note">As funções são sugestões e podem ser alteradas pela equipe.</p>
+    </section>
+    <section class="contact-section" id="contato"><div class="container contact-content"><div><p class="tag">VAMOS JUNTOS?</p><h2>Uma ideia pode inspirar muitas mudanças.</h2><p>Deixe uma mensagem para nossa equipe.</p></div>
+      <form id="contactForm"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Digite seu nome" required><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="3" placeholder="Escreva sua ideia..." required></textarea><button class="btn" type="submit">Enviar mensagem</button><p id="formFeedback" class="feedback" aria-live="polite"></p></form>
+    </div></section>
+  </main>
+  <footer><div class="container footer-inner"><a class="logo" href="#inicio">Eco<span>Tech</span></a><p>Feito por Ellem, Kellyane, Nathan e Kaio.</p><p>© <span id="year"></span> • Portfólio educativo</p></div></footer>
+  <dialog id="ideaDialog"><button class="close-dialog" id="closeDialog" aria-label="Fechar">×</button><p class="tag">MAIS DETALHES</p><p id="dialogText"></p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
